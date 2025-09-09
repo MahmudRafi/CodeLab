@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab - Crafting Tomorrow’s Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: #00FF00;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            margin-top: 20px;
+            animation: glitch 1.5s infinite;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #32CD32;
+        }
+
+        .logo {
+            margin-top: 20px;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border: 2px solid #00FF00;
+            border-radius: 10px;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 1px 0 red, -1px 0 cyan, 1px 0 yellow;
+                transform: translate(0);
+            }
+            10% {
+                text-shadow: -1px 0 red, 1px 0 cyan, -1px 0 yellow;
+                transform: translate(-5px);
+            }
+            20% {
+                text-shadow: 1px 0 red, -1px 0 cyan, 1px 0 yellow;
+                transform: translate(5px);
+            }
+            30% {
+                text-shadow: -1px 0 red, 1px 0 cyan, -1px 0 yellow;
+                transform: translate(-5px);
+            }
+            40% {
+                text-shadow: 1px 0 red, -1px 0 cyan, 1px 0 yellow;
+                transform: translate(5px);
+            }
+            50% {
+                text-shadow: -1px 0 red, 1px 0 cyan, -1px 0 yellow;
+                transform: translate(0);
+            }
+            100% {
+                text-shadow: 1px 0 red, -1px 0 cyan, 1px 0 yellow;
+                transform: translate(0);
+            }
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .logo {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.png" alt="CodeLab Logo" class="logo">
+        <h1>CodeLab</h1>
+        <p>CodeLab – Crafting Tomorrow’s Tech.</p>
+    </div>
+</body>
+</html>
